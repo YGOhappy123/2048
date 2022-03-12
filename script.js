@@ -64,7 +64,7 @@ async function handleInput (e) {
         !canMoveRight()
     ) {
         newTile.waitForTransition(true).then(() => {
-            const is2048 = grid.cells.some(cell => cell.tile.value >= 128)
+            const is2048 = grid.cells.some(cell => cell.tile.value >= 2048)
             alert(
                 is2048 ?
                 'Congratulation! You won the game':
